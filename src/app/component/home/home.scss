@@ -1,0 +1,56 @@
+/* app/home/home.component.scss */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('/assets/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+   z-index: 100;
+}
+
+/* dark overlay like screenshot */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* text container */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-title span {
+  color: #ffae00;
+}
+
+.hero-subtitle {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+/* center text vertically with some offset */
+.hero .row {
+  justify-content: center;
+}
+
+/* extra spacing from top on large screens to avoid navbar overlap */
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,35 @@
+<section id="merchandise" class="merch-section py-5">
+  <div class="container text-center">
+
+    <!-- Heading + subtitle -->
+    <div class="mb-5">
+      <div class="merch-line mx-auto mb-2"></div>
+      <h2 class="merch-title mb-2">MERCHANDISE</h2>
+      <p class="merch-subtitle mb-0">
+        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.
+        In eum omnes molestie. Sed ad debet scaevola, ne mel lorem legendos.
+      </p>
+    </div>
+
+    <!-- Products row -->
+    <div class="row g-4 justify-content-center">
+      <div
+        class="col-12 col-sm-6 col-lg-3"
+        *ngFor="let item of products; "
+      >
+        <div class="merch-card d-flex flex-column align-items-center">
+          <div class="merch-image-wrapper mb-3">
+            <img
+              [src]="item.image"
+              [alt]="item.name"
+              class="img-fluid merch-img"
+            />
+          </div>
+          <h6 class="merch-name mb-1">{{ item.name }}</h6>
+          <p class="merch-price mb-0">{{ item.price }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

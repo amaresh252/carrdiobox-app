@@ -1,0 +1,65 @@
+.merch-section {
+  background-color: #fff;
+   z-index: 100;
+}
+
+/* heading */
+.merch-line {
+  width: 45px;
+  height: 3px;
+  background-color: #ffae00;
+}
+
+.merch-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.merch-subtitle {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.85rem;
+  color: #888888;
+  font-weight: 600;
+}
+
+/* cards */
+.merch-card {
+  background-color: #ffffff;
+  padding: 2.5rem 1.5rem 1.75rem;
+  border-radius: 3px;
+}
+
+.merch-image-wrapper {
+  width: 160px;
+  max-width: 100%;
+}
+
+.merch-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.merch-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgb(28, 27, 27);
+}
+
+.merch-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffae00;
+}
+
+/* small screens */
+@media (max-width: 575.98px) {
+  .merch-card {
+    padding: 2rem 1rem 1.5rem;
+  }
+}

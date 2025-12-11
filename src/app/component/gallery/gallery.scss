@@ -1,0 +1,99 @@
+.gallery-section {
+  background-color: #f5f5f5;
+   z-index: 100;
+}
+
+/* heading area */
+.gallery-line {
+  width: 45px;
+  height: 3px;
+  background-color: #ffae00;
+}
+
+.gallery-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.gallery-subtitle {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.85rem;
+  color: #888888;
+   font-weight: 600;
+}
+
+/* images */
+.gallery-item1 {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 3px;
+}
+
+.gallery-item {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 3px;
+  position: relative;        /* needed for absolute overlay */
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: block;
+}
+
+/* overlay play icon */
+.gallery-play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;       /* click passes to image if needed */
+}
+
+.play-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+
+.gallery-img1 {
+  display: block;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* button */
+.gallery-btn {
+  border-radius: 999px;
+  background-color: #ffae00;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: none;
+}
+
+.gallery-btn:hover {
+  background-color: #e09a00;
+}
+
+/* small screens */
+@media (max-width: 575.98px) {
+  .gallery-img {
+    height: 160px;
+  }
+}
