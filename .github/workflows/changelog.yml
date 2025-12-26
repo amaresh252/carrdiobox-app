@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - dev 
 
 jobs:
   notify-discord:
@@ -15,11 +16,11 @@ jobs:
       - name: Send Discord notification
         uses: appleboy/discord-action@v1.2.0
         with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL1 }}
           message: |
             **A new push was made to the ${{ github.ref_name }} branch of ${{ github.repository }}!**
             **Committer:** ${{ github.actor }}
-            **Message:** ${{ github.event.head_commit.message }}
+            **Commit Message:** ${{ github.event.head_commit.message }}
             **View Changes:** ${{ github.event.head_commit.url }}
           username: GitHub Changelog
           avatar_url: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
