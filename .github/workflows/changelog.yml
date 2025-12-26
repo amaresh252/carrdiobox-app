@@ -16,7 +16,7 @@ jobs:
       - name: Send Discord notification
         uses: appleboy/discord-action@v1.2.0
         with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL1 }}
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL2 }}
           message: |
             **A new push was made to the ${{ github.ref_name }} branch of ${{ github.repository }}!**
             **Committer:** ${{ github.actor }}
