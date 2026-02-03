@@ -78,26 +78,26 @@ This project uses environment variables to manage configuration across different
 
 1. **Create .env.local file :** Copy the `.env.example` to `.env.local`
 
-   **Root Environment File**
+**Root Environment File**
 
 ```bash
 # Path: MainBackOffice/.env.local
 NODE_ENV=development
 ```
 
-   **Database Package**
+**Database Package**
 ```bash  
 # Path: packages/database/.env.local
 DATABASE_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
 DIRECT_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:5432/postgres"
 ```
-   **Supabase Package**
+**Supabase Package**
 ```bash 
 # Path: packages/supabase/.env.local
 SUPABASE_URL=https://your-project-id.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIs...
 ```
-   **API Package**
+**API Package**
 ```bash 
 # Path: apps/api/.env.local
 PORT=3000
