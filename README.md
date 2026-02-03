@@ -78,41 +78,41 @@ This project uses environment variables to manage configuration across different
 
 1. **Create .env.local file:** Copy the `.env.example` to `.env.local`
 
-   - **Root Environment File**
+   **Root Environment File**
 ```bash
-     # Path: MainBackOffice/.env.local
-     NODE_ENV=development
+   # Path: MainBackOffice/.env.local
+   NODE_ENV=development
 ```
 
-   - **Database Package**
+   **Database Package**
 ```bash  
-     # Path: packages/database/.env.local
-     DATABASE_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
-     DIRECT_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:5432/postgres"
+   # Path: packages/database/.env.local
+   DATABASE_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+   DIRECT_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:5432/postgres"
 ```
 
-   - **Supabase Package**
+   **Supabase Package**
 ```bash 
-     # Path: packages/supabase/.env.local
-     SUPABASE_URL=https://your-project-id.supabase.co
-     SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIs...
+   # Path: packages/supabase/.env.local
+   SUPABASE_URL=https://your-project-id.supabase.co
+   SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIs...
 ```
 
-   - **API Package**
+   **API Package**
 ```bash 
-     # Path: apps/api/.env.local
-     PORT=3000
-     HOST=0.0.0.0
-     SESSION_SECRET=dev_session_k3y_4p1_s3rv3r_2026_turb0r3p0_m41nb4ck0ff1c3
-     JWT_SECRET=dev_jwt_t0k3n_k3y_4p1_s3rv3r_2026_t3st1ng_3nv1r0nm3nt_s3cur3
-     SECURE_SESSION_KEY=2a7b9c4d6e8f1a3b5c7d9e2f4a6b8c0d1e3f5a7b9c2d4e6f8a0b2c4d6e8f1a3b
-     CORS_ORIGIN=http://localhost:5173
-     RATE_LIMIT_MAX=100
-     RATE_LIMIT_TIME_WINDOW=60000
-     REDIS_HOST=redis-18949.crce263.ap-south-1-1.ec2.cloud.redislabs.com
-     REDIS_PORT=18949
-     REDIS_PASSWORD=73munm8UD3RoSCjV6tXZkkbF3wvi5zxC
-     DATABASE_URL="postgresql://postgres.fvlpbaldsflrtuhlnhlr:hJRIXQ1Ao1C1gN6v@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+   # Path: apps/api/.env.local
+   PORT=3000
+   HOST=0.0.0.0
+   SESSION_SECRET=dev_session_k3y_4p1_s3rv3r_2026_turb0r3p0_m41nb4ck0ff1c3
+   JWT_SECRET=dev_jwt_t0k3n_k3y_4p1_s3rv3r_2026_t3st1ng_3nv1r0nm3nt_s3cur3
+   SECURE_SESSION_KEY=2a7b9c4d6e8f1a3b5c7d9e2f4a6b8c0d1e3f5a7b9c2d4e6f8a0b2c4d6e8f1a3b
+   CORS_ORIGIN=http://localhost:5173
+   RATE_LIMIT_MAX=100
+   RATE_LIMIT_TIME_WINDOW=60000
+   REDIS_HOST=redis-18949.crce263.ap-south-1-1.ec2.cloud.redislabs.com
+   REDIS_PORT=18949
+   REDIS_PASSWORD=73munm8UD3RoSCjV6tXZkkbF3wvi5zxC
+   DATABASE_URL="postgresql://postgres.fvlpbaldsflrtuhlnhlr:hJRIXQ1Ao1C1gN6v@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
 ```
 
 2. **Edit all .env.local file with actual values**
