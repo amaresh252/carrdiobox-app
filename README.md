@@ -79,10 +79,10 @@ This project uses environment variables to manage configuration across different
 1. **Create .env.local file :** Copy the `.env.example` to `.env.local`
 
      **Root Environment File**
-       ```bash
-       # Path: MainBackOffice/.env.local
-       NODE_ENV=development
-       ```
+        ```bash
+        # Path: MainBackOffice/.env.local
+        NODE_ENV=development
+        ```
 
       **Database Package**
        ```bash  
