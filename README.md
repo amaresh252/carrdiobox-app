@@ -85,11 +85,11 @@ This project uses environment variables to manage configuration across different
        ```
 
       **Database Package**
-      ```bash  
-      # Path: packages/database/.env.local
-      DATABASE_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
-      DIRECT_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:5432/postgres"
-      ```
+       ```bash  
+       # Path: packages/database/.env.local
+       DATABASE_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+       DIRECT_URL="postgresql://postgres.[project]:[password]@aws-1-ap-south-1.pooler.supabase.com:5432/postgres"
+       ```
 
      **Supabase Package**
        ```bash 
